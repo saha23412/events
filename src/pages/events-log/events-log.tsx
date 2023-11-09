@@ -6,7 +6,8 @@ import ButtonCustom from "components/ui/button/button";
 import InputCustom from "components/ui/input/input";
 
 const EventLog: React.FC = () => {
-  const { replenishEvents, onClickSearch, events } = useContext(EventsContext);
+  const { replenishEvents, onClickSearch, events, flagSearch } =
+    useContext(EventsContext);
   const [search, setSearch] = useState<string>("");
   const onClickReset = () => {
     replenishEvents();
@@ -22,7 +23,7 @@ const EventLog: React.FC = () => {
             onClick={() => onClickSearch(search)}
             label="Поиск"
             type="button"
-            disabled={!search.length}
+            disabled={!search.length || flagSearch}
           />
 
           <div className="p-input-icon-left mr-2">

@@ -9,6 +9,7 @@ interface EventsContext {
   replenishEvents: () => void;
   scannedEvent: (id: number) => void;
   onKeyDownScannedEvent: (event: React.KeyboardEvent<HTMLInputElement>) => void;
+  flagSearch: boolean;
 }
 interface EventsProvideProps {
   children: React.ReactNode;
@@ -20,37 +21,42 @@ export const EventsContext = createContext<EventsContext>({
   replenishEvents: () => {},
   scannedEvent: () => {},
   onKeyDownScannedEvent: () => {},
+  flagSearch: false,
 });
 
 export const EventsProvider = ({ children }: EventsProvideProps) => {
   const [events, setEvents] = useState<EventCard[]>(eventsData);
   const [copyEvents, setCopyEvents] = useState<EventCard[]>(eventsData);
+  const [flagSearch, setFlagSearch] = useState<boolean>(false);
+
   //Добавление event каждые 6 секунд
   useEffect(() => {
     const intervalAddEvent = setInterval(() => {
-      const date = new Date();
-      const newEvent: EventCard = {
-        id: Date.now(),
-        date: {
-          formatHMS: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
-          formatYMD: `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`,
-        },
-        importance: "Высокая",
-        scanned: false,
-        selected: false,
-        machinery: "Юпитер",
-        message: "В рабочем состоянии",
-        FIO: "Киприянов А.Р",
-      };
+      if (!flagSearch) {
+        const date = new Date();
+        const newEvent: EventCard = {
+          id: Date.now(),
+          date: {
+            formatHMS: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
+            formatYMD: `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`,
+          },
+          importance: "Высокая",
+          scanned: false,
+          selected: false,
+          machinery: "Юпитер",
+          message: "В рабочем состоянии",
+          FIO: "Киприянов А.Р",
+        };
 
-      setEvents((prevEvents) => {
-        const newArrEvent = [newEvent, ...prevEvents];
-        setCopyEvents(newArrEvent);
-        return newArrEvent;
-      });
+        setEvents((prevEvents) => {
+          const newArrEvent = [newEvent, ...prevEvents];
+          setCopyEvents(newArrEvent);
+          return newArrEvent;
+        });
+      }
     }, 6000);
     return () => clearInterval(intervalAddEvent);
-  }, []);
+  }, [flagSearch]);
   //Выделить карточку
   const selectedEvent = (id: number) => {
     setEvents((prevEvents) =>
@@ -64,6 +70,7 @@ export const EventsProvider = ({ children }: EventsProvideProps) => {
   };
   //Поиск по сообщению
   const onClickSearch = (search: string) => {
+    setFlagSearch(true);
     setCopyEvents(events);
     setEvents((prevEvents) =>
       prevEvents.filter((event) => {
@@ -76,6 +83,7 @@ export const EventsProvider = ({ children }: EventsProvideProps) => {
     );
   };
   const replenishEvents = () => {
+    setFlagSearch(false);
     setEvents(copyEvents);
   };
   //Просмотр карточки
@@ -112,6 +120,7 @@ export const EventsProvider = ({ children }: EventsProvideProps) => {
         replenishEvents,
         scannedEvent,
         onKeyDownScannedEvent,
+        flagSearch,
       }}
     >
       {children}
