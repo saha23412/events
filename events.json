@@ -1,0 +1,263 @@
+[
+  {
+    "id": 0,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 1,
+    "importance": "Средняя",
+    "date": {
+      "formatYMD": "09.12.2022",
+      "formatHMS": "10:00:10"
+    },
+    "machinery": "Вегас-10",
+    "message": "Сервер Вегас-10 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 2,
+    "importance": "Низкая",
+    "date": {
+      "formatYMD": "08.12.2022",
+      "formatHMS": "07:00:14"
+    },
+    "machinery": "Вегас-20",
+    "message": "Сервер Вегас-20 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 3,
+    "importance": "Низкая",
+    "date": {
+      "formatYMD": "07.12.2022",
+      "formatHMS": "10:00:25"
+    },
+    "machinery": "Вегас-25",
+    "message": "Сервер Вегас-25 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 4,
+    "importance": "Средняя",
+    "date": {
+      "formatYMD": "06.12.2022",
+      "formatHMS": "10:00:15"
+    },
+    "machinery": "Вегас-25",
+    "message": "Сервер Вегас-25 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 5,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "05.12.2022",
+      "formatHMS": "10:20:25"
+    },
+    "machinery": "Вегас-25",
+    "message": "Сервер Вегас-25 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 6,
+    "importance": "Средняя",
+    "date": {
+      "formatYMD": "04.12.2022",
+      "formatHMS": "10:10:10"
+    },
+    "machinery": "Вегас-75",
+    "message": "Сервер Вегас-75 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 7,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "04.12.2022",
+      "formatHMS": "10:00:09"
+    },
+    "machinery": "Вегас-65",
+    "message": "Сервер Вегас-65 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 8,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "04.12.2022",
+      "formatHMS": "10:00:08"
+    },
+    "machinery": "Вегас-55",
+    "message": "Сервер Вегас-55 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 9,
+    "importance": "Низкая",
+    "date": {
+      "formatYMD": "04.12.2022",
+      "formatHMS": "10:00:05"
+    },
+    "machinery": "Вегас-55",
+    "message": "Сервер Вегас-55 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 10,
+    "importance": "Низкая",
+    "date": {
+      "formatYMD": "04.12.2022",
+      "formatHMS": "10:00:04"
+    },
+    "machinery": "Вегас-45",
+    "message": "Сервер Вегас-45 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 11,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "04.12.2022",
+      "formatHMS": "10:00:03"
+    },
+    "machinery": "Вегас-35",
+    "message": "Сервер Вегас-35 недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 12,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 13,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 14,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 15,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 16,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 17,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+  {
+    "id": 18,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  },
+
+  {
+    "id": 19,
+    "importance": "Высокая",
+    "date": {
+      "formatYMD": "10.12.2022",
+      "formatHMS": "10:00:14"
+    },
+    "machinery": "Вегас",
+    "message": "Сервер Вегас недоступен",
+    "FIO": "Смирнова В.А",
+    "scanned": false,
+    "selected": false
+  }
+]
